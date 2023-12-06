@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/particleText.js"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/5-17.js"></script>
+    <title>rusthoge Medium</title>
+    <style>
+        
+        body {
+            background: #1a1a1a;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+                #wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            min-height: 100%;
+        }
+
+        header {
+            background: #2d2d2d;
+            text-align: center;
+            padding: 45px 0;
+            position: relative;
+            z-index: -999;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+
+        #toc {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 998;
+        }
+
+        #toc a {
+            display: block;
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            padding: 20px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        code {
+            background: #333;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background: #2d2d2d;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        #particle {
+            width: 100%;
+            height: 10%;
+            vertical-align: bottom;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999; /* 他の要素よりも高い値を指定 */
+        }
+
+
+        #main-area {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        #main-area p {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.5em;
+            border-radius: 5px;
+            display: inline-block;
+            line-height: 1.5;
+        }
+
+        #discord-join-link {
+            display: inline-block;
+            background-image: url('discord.jpg');
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            text-indent: -9999px;
+        }      
+        .container {
+            width: 50%;
+            padding: 20px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        iframe {
+            width: 38%;
+            height: 60%;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            position: absolute;
+            top: 100px;    /* Adjust this value to move the iframe down */
+            right: -20px; /* Adjust this value to move the iframe to the right */
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <canvas id="particle"></canvas>
+    </div>
+
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#server-rules">サーバールール</a></li>
+            <li><a href="#server-spec">サーバーの仕様</a></li>
+            <li><a href="#how-to-join">rusthogeの入り方</a></li>
+            <li><a href="#discord-join">discordの参加方法</a></li>
+        </ul>
+      </nav>
+
+    <iframe src="https://discord.com/widget?id=1129343559460474891&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</section>
+
+    <section class="container" id="server-rules">
+        <h2>サーバールール</h2>
+        <article>
+            <h3>Discord ルール</h3>
+            <ul>
+                <li>ディスコードのガイドラインに違反しないでください。</li>
+                <li>スパムや宣伝を行わないでください。</li>
+                <li>人種差別は許容されません。</li>
+                <li>ヌードやNSFWコンテンツの投稿は禁止です。</li>
+                <li>鯖管にメンションをしないでください。問題があればチケットを作成してください。</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>ゲームサーバールール</h3>
+            <ul>
+                <li>チート行為やマクロの使用は一切禁止です。</li>
+                <li>サーバーやコミュニティに対する悪意ある行動は禁止です。</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="container" id="server-spec">
+        <h2>サーバーの仕様</h2>
+        <ul>
+            <li>定期再起動: 毎日4時に行われます。</li>
+            <li>タレットの設置台数無制限</li>
+            <li>マップサイズ: 4000</li>
+            <li>チーム上限: 8人（8人を超えての行動も許可）</li>
+            <li>MAPワイプ: 2週間ごとに実施（BPは1ヵ月）</li>
+            <li>前哨基地にバンディットキャンプ併合</li>
+        </ul>
+    </section>
+
+    <section class="container" id="how-to-join">
+        <h2>rusthogeの入り方</h2>
+        <p>検索でrusthogeと入力するか、F1コンソールを開いて以下のコマンドを入力します。</p>
+        <code>connect 118.241.234.192:28015</code>
+        <p>サーバーに参加して、楽しい時間をお過ごしください！</p>
+    </section>
+
+    <section class="container" id="discord-join">
+        <h2>discordの参加方法</h2>
+        <p>こちらを<a href="https://discord.gg/3AuezCax" id="discord-join-link" target="_blank">クリック!</a>押して参加してください。</p>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            $("#particle").particleText({
+                text: "rusthoge Medium",
+                colors: ["#fff", "#ccc", "#ddd"],
+                speed: "high",
+            });
+
+        });
+    </script>
+</body>+
+
+</html>
