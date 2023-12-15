@@ -466,6 +466,7 @@ p {
 
 .circle {
     margin-left: 300px;
+    opacity: 0.5;
 }
 
 .circle2 {
