@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>server page | RustHoge</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="logo.png" alt="Discord Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li id="link1" class="link"><a href="server.html">Server</a></li>
+            <li id="link2" class="link"><a href="#">status</a></li>
+            <li id="link3" class="link"><a href="#">news</a>
+        </ul>
+        <button class="btn" onclick="loginform()">Login</button>
+        <script>
+            function loginform() {
+                window.location.href = "login.html";
+            }
+        </script>
+    </nav>
+
+    <header class="container">
+        <div class="newsbasket">
+            <div class="newsb">
+              <h1 class="news">リーダボードについて。</h1>
+              <h2 class="news1">ランキングの計算方法はランキングに<br>記載されている鉱石+木材や動物から取得できる<br>肉や骨などを足した合計の値が<br>多い方順に表示されます。</h2>
+            </div>
+            <div class="newsb">
+                <h1 class="news">第2 RustHogeサーバー</h1>
+                <h2 class="news1">第2 RustHogeサーバーは<br>「New RustHoge medium」という名前で<br>現在試験的に稼働中です。今後は<br>そちらのサーバーが<br>「JP/SEA RustHoge medium lowpop」<br>サーバーとなります。
+                </h2>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>server page | RustHoge</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="logo.png" alt="Discord Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li id="link1" class="link"><a href="server.html">Server</a></li>
+            <li id="link2" class="link"><a href="#">status</a></li>
+            <li id="link3" class="link"><a href="#">news</a>
+        </ul>
+        <button class="btn" onclick="loginform()">Login</button>
+        <script>
+            function loginform() {
+                window.location.href = "login.html";
+            }
+        </script>
+    </nav>
+
+    <header class="container">
+        <div class="loginw">
+            <h1><i class="ri-account-box-fill"></i> login form</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
