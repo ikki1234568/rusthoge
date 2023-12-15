@@ -404,20 +404,23 @@ footer .column > a:hover{
     border: 2px solid #3498db;
     border-radius:20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    float: left;
-    margin-left: 385px;
+    width: 40%;
+    margin: auto;
+    text-align: center
 }
 
-
+.inline {
+    margin-left: auto;
+}
 .server hr {
     border: 0;
     height: 1px;
     background-color: #3498db;
     margin: 10px 0;
 }
-.header {
+.server.header {
     color: #3498db;
+    
 }
 
 ul {
