@@ -404,7 +404,7 @@ footer .column > a:hover{
     border: 2px solid #3498db;
     border-radius:20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 40%;
+    width: 30%;
     margin: auto;
     text-align: center
 }
@@ -420,7 +420,6 @@ footer .column > a:hover{
 }
 .server.header {
     color: #3498db;
-    
 }
 
 ul {
@@ -431,9 +430,12 @@ ul {
 li {
     margin-bottom: 10px;
     color: #fff;
+    text-align: left;
+    padding-left: 60px;
 }
 h2 {
     color: #fff;
+    margin-left: -180px;
 }
 
 p {
@@ -443,6 +445,7 @@ p {
 .circle-container {
     display: flex;
     margin-top: 50px;
+    margin-left: 100px;
 }
 
 .circle,
@@ -458,6 +461,7 @@ p {
     text-align: center;
     color: #ccc;
     cursor: pointer;
+    
 }
 
 .circle {
@@ -471,12 +475,7 @@ p {
 .circle3 {
     margin-left: 100px;
 }
-.circle:hover img {
-    opacity: 0.5;
-}
-.circle2:hover img {
-    opacity: 0.5;
-}
-.circle3:hover img {
+.circle:hover,
+.circle2:hover {
     opacity: 0.5;
 }

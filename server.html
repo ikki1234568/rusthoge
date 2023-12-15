@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>server page | RustHoge</title>
 </head>
 
@@ -41,7 +42,6 @@
             </script>
         </div>
         <div class="imgd">
-            <img src="discord_image.png" alt="Discord Server Image">
         </div>
 
 
@@ -55,34 +55,35 @@
                 <img src="server.png" alt="Server 2">
                 <p>JP/SEA<br> 2x weekly</p>
             </div>
-            <div class="circle3" onclick="redirectToServer2()">
-                <img src="server.png" alt="Server 2">
-                <p>JP/SEA<br> 10x weekly</p>
-            </div>
         </div>
-        
 
 
     </header>
     <section class="server">
-        <h2 class="header">Server Rules</h2>
-        <ul>
-            <h2>rustのルール</h2>
-            <li>チート行為やマクロ使用は一切禁止。</li>
-            <li>サーバーやコミュニティに対する悪意ある行為の禁止</li>
-            <li>バグなどを悪用する行為の禁止</li>
-            
-            <hr>
-            <h2>Discordのルール</h2>
-            <li>ディスコードのガイドラインに違反しないでください。</li>
-            <li>スパムや宣伝をしないでください。</li>
-            <li>人種差別をしないでください。</li>
-            <li>ヌードやNSFWを投稿しないでください。</li>
-            <li>鯖管にメンションをしないでください。</li>
+        <div class="test">
+        <h2 class="header">Serverの仕様</h2>
+        <ul class="inline" id="server1Specs">
+            <li>4時に定期再起動</li>
+            <li>タレット上限解除</li>
+            <li>マップサイズ3500</li>
+            <li>チーム上限6人(7人以上での行動禁止)</li>
+            <li>チーミングやローテーション禁止</li>
+            <li>MAPワイプは2週間ごとに実施（BPは1ヵ月）</li>
+            <li>前哨基地にバンディットキャンプ併合</li>
+            <li>ロックドクレート解除待機時間が10分</li>
         </ul>
+        <ul class="inline" id="server2Specs" style="display: none;">
+            <li>4時に定期再起動</li>
+            <li>タレット上限解除</li>
+            <li>マップサイズ3500</li>
+            <li>チーム上限8人(8人を超えての行動OK)</li>
+            <li>MAPワイプは1週間ごとに実施（BPは1ヵ月）</li>
+            <li>前哨基地にバンディットキャンプ併合</li>
+            <li>ロックドクレート解除待機時間が10分</li>
+            <li>採掘量やドラム缶の物資など2倍</li>
+        </ul>
+        </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
