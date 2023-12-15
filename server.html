@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>server page | RustHoge</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="logo.png" alt="Discord Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li id="link1" class="link"><a href="server.html">Server</a></li>
+            <li id="link2" class="link"><a href="#">status</a></li>
+            <li id="link3" class="link"><a href="#">news</a>
+        </ul>
+        <button class="btn">Login</button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <h4>Welcome to</h4>
+            <h1><span>RustHoge</span>Server</h1>
+            <p>秩序を守ってserverに参加しましょう</p>
+            <button class="btn" onclick="redirectToDiscord()">Discord Join</button>
+            <script>
+                function redirectToDiscord() {
+                    window.location.href = "https://discord.gg/yFsHVmU7";
+                }
+            </script>
+        </div>
+        <div class="imgd">
+            <img src="discord_image.png" alt="Discord Server Image">
+        </div>
+
+
+
+        <div class="circle-container">
+            <div class="circle" onclick="redirectToServer1()">
+                <img src="server.png" alt="JP/SEA RustHoge medium lowpop">
+                <p>JP/SEA lowpop</p>
+            </div>
+            <div class="circle2" onclick="redirectToServer2()">
+                <img src="server.png" alt="Server 2">
+                <p>JP/SEA<br> 2x weekly</p>
+            </div>
+            <div class="circle3" onclick="redirectToServer2()">
+                <img src="server.png" alt="Server 2">
+                <p>JP/SEA<br> 10x weekly</p>
+            </div>
+        </div>
+        
+
+
+    </header>
+    <section class="server">
+        <h2 class="header">Server Rules</h2>
+        <ul>
+            <h2>rustのルール</h2>
+            <li>チート行為やマクロ使用は一切禁止。</li>
+            <li>サーバーやコミュニティに対する悪意ある行為の禁止</li>
+            <li>バグなどを悪用する行為の禁止</li>
+            
+            <hr>
+            <h2>Discordのルール</h2>
+            <li>ディスコードのガイドラインに違反しないでください。</li>
+            <li>スパムや宣伝をしないでください。</li>
+            <li>人種差別をしないでください。</li>
+            <li>ヌードやNSFWを投稿しないでください。</li>
+            <li>鯖管にメンションをしないでください。</li>
+        </ul>
+    </section>
+    
+    <iframe src="https://discord.com/widget?id=1151147149376106546&theme=dark" width="520" height="480"  allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
