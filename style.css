@@ -446,29 +446,11 @@ p {
     margin-top: 30px;
 }
 
-.serv {
-    border: 2px solid #3498db;
-    border-radius:20px;
-    padding-bottom: 100px;
-    margin-left: 340px;
-    margin-top: 70px;
-    width: 200px;
-    height: 270px;
-}
-.serv2 {
-    border: 2px solid #3498db;
-    border-radius:20px;
-    padding-bottom: 100px;
-    margin-left: -180px;
-    margin-top: 70px;
-    width: 200px;
-    height: 270px;
-}
 
 .circle-container {
     display: flex;
-    margin-top: -360px;
-    margin-left: 95px;
+    margin-top: 50px;
+    margin-left: 200px;
 }
 
 .circle,
@@ -484,13 +466,10 @@ p {
     text-align: center;
     color: #ccc;
     cursor: pointer;
-    margin-top: 60px;
-    text-align: center;
 }
 
 .circle {
     margin-left: 300px;
-    opacity: 0.5;
 }
 
 .circle2 {
@@ -499,6 +478,15 @@ p {
 
 .circle3 {
     margin-left: 100px;
+}
+.circle:hover img {
+    opacity: 0.5;
+}
+.circle2:hover img {
+    opacity: 0.5;
+}
+.circle3:hover img {
+    opacity: 0.5;
 }
 
 
