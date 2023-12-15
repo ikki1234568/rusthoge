@@ -475,10 +475,12 @@ p {
 .circle3 {
     margin-left: 100px;
 }
+
 .circle:hover,
 .circle2:hover {
     opacity: 0.5;
 }
+
 .vip {
     text-align: center;
     color: #fff;
