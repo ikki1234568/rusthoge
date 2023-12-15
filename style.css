@@ -397,7 +397,7 @@ footer .column > a:hover{
 
 .server {
     position: relative;
-    top: -20px;
+    top: 0px;
     height: 200;
     margin: 20px;
     padding: 20px;
