@@ -224,6 +224,9 @@ section .header{
     margin: auto;
     text-align: center;
     color: #ccc;
+    margin-left: auto;
+    text-align: left;
+    padding-left: 200px;
 }
 
 .pricing{
@@ -396,6 +399,7 @@ footer .column > a:hover{
 }
 
 .server {
+    padding: 20px;
     position: relative;
     top: 0px;
     height: 200;
@@ -404,7 +408,7 @@ footer .column > a:hover{
     border: 2px solid #3498db;
     border-radius:20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 50%;
     margin: auto;
     text-align: center
 }
@@ -427,11 +431,11 @@ ul {
     padding: 0;
 }
 
-li {
+.server li {
     margin-bottom: 10px;
     color: #fff;
     text-align: left;
-    padding-left: 60px;
+    padding-left: 170px;
 }
 h2 .header {
     color: #fff;
@@ -439,7 +443,7 @@ h2 .header {
 }
 
 p {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .circle-container {
@@ -488,4 +492,37 @@ p {
     margin-bottom: 1rem;
     font-size: 2.25rem;
     font-weight: 600;
+}
+
+.server-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.additional-section {
+    padding: 20px;
+    border: 2px solid #3498db; /* Blue border color */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Adjust the width as needed */
+    text-align: center;
+}
+
+.additional-section h2 {
+    color: #fff; /* Blue text color */
+    margin-bottom: 1.5rem; /* Increased vertical spacing */
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px; /* Add letter spacing */
+}
+
+.text li {
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: left;
+    padding-left: 70px;
 }
