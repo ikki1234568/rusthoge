@@ -49,11 +49,9 @@ async function popStatus(serverId, elementId) {
     }
 }
 
-// Call the function for each server when the page loads
 popStatus("24768964", "server-status");
 popStatus("24807998", "server-status2");
 
-// Optionally, you can set up a periodic refresh
 setInterval(() => {
     popStatus("24768964", "server-status");
     popStatus("24807998", "server-status2");
